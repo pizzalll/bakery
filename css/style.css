@@ -1,0 +1,165 @@
+*{margin:0; padding:0;}
+a{text-decoration: none; color: #333333;}
+li{list-style-type: none;}
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+.popup.show {
+  position: absolute;
+  z-index: 999;
+  left: 20px; top: 50px;
+  width: 300px; height: 400px;
+  background: #fff;
+  padding: 1em;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  display: block;
+}
+.popup{ display: none;}
+.popup > .close_box{
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 300px;
+  background: #666;
+  text-align: right;
+  padding: 5px 1em;
+}
+
+#main_header {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+#main_header > .logo{
+    float: left;
+}
+  #main_gnb {
+    position: relative;
+    padding-top: 40px;
+  }
+  
+  #main_gnb > .depth1 > li {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+  }
+  #main_gnb > .depth1 > li > a {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  #main_gnb > .depth1 > li > a:hover{
+      color: #7b422e
+  }
+  #main_gnb .depth2.show {
+    background: #bb692d;
+    height: 140px;
+    padding: 1em;
+    overflow: hidden;
+  }
+  
+  #main_gnb .depth2{
+    height: 0;
+    overflow: hidden;
+    transition-duration: 0.4s;
+  }
+  
+  #main_gnb .depth2 a {
+    display: block;
+    font-weight: bold;;
+  }
+  #main_gnb .depth2 a:hover {
+    color: #7b422e;
+  }
+  #main_banner {
+    position: relative;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 80px;
+  }
+  #main_banner .slider img { width: 100%;}
+  .slider {
+    position: relative;
+    min-height: 800px;
+  }
+  .slider > img {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    /* 전환효과 */
+    transition-duration: 0.5s;
+  }
+  .slider > img.show {
+    opacity: 1;
+  }
+  .indicator {
+    position: absolute;
+    z-index: 99;
+    opacity: 1;
+  }
+  .indicator > a.show {
+    color: red;
+  }
+#contents{
+    height: 220px;
+    margin-bottom: 70px;
+}
+#contents > div{
+    width: 380px;
+    height: 220px;
+    float: left;
+    overflow: hidden;
+}
+#contents > .news{
+    width: 350px;
+}
+#contents > .news > h1{
+    padding-left: 120px;
+}
+#contents > .gallery{
+    width: 470px;
+    margin-left: 50px;
+    text-align: center;
+}
+#contents > .banner{
+    width: 320px;
+    text-align: center;
+}
+#contents li{
+    font-size: 12px;
+    margin-top: 15px;
+}
+#contents li span{
+    float: right;
+}
+
+#main_footer{
+    width: 1200px;
+    height: 100px;
+    background: #bb692d;
+}
+#main_footer > .f_logo{
+    width: 200px;
+    float: left;
+    margin-top: 30px;
+}
+#main_footer > .copyright{
+    width: 800px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+#main_footer > .family{
+    width: 200px;
+    float: left;
+    text-align: center;
+    margin-top: 13px;
+}
